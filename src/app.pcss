@@ -1,0 +1,36 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		font-family: 'Roboto Flex', sans-serif;
+		height: 100%;
+	}
+
+	body {
+		min-height: 100%;
+	}
+}
+
+.button {
+	@apply flex h-[50px] w-full items-center justify-center gap-[10px] rounded-lg transition;
+	@apply cursor-pointer;
+}
+
+.button .text {
+	@apply text-lg font-medium;
+}
+
+.button-primary {
+	@apply bg-blue-ribbon-500 hover:bg-blue-ribbon-400 active:bg-blue-ribbon-600 text-white;
+}
+
+.button-secondary {
+	@apply bg-alabaster-100 hover:bg-alabaster-200 active:bg-alabaster-300 text-[#030229];
+}
+
+.link {
+	@apply text-[#605BFF] underline;
+}
