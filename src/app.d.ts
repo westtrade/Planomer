@@ -8,6 +8,14 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	interface Employee {
+		name: string;
+		email: string;
+		phone_number: string;
+		role: 'general_contractor' | 'subcontractor' | '';
+	}
+	type Employees = Employee[];
 }
 
 export {};

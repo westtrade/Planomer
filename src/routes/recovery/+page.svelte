@@ -17,7 +17,7 @@
     pt-[102px] px-[67px]
 "
 >
-	<a href="/" class="mb-4 mx-auto">
+	<a href="/" class="mb-4 mx-auto relative left-[20px]">
 		<Logo />
 	</a>
 

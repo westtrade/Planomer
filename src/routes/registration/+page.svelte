@@ -19,7 +19,7 @@
 <LayoutWithSidebar>
 	<svelte:fragment slot="sidebar">
 		<div class="flex flex-col gap-5 mt-[58px] w-full">
-			<a href="/" class="mb-4 mx-auto">
+			<a href="/" class="mb-4 mx-auto relative left-[20px]">
 				<Logo />
 			</a>
 
