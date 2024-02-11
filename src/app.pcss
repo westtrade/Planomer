@@ -15,7 +15,7 @@
 }
 
 .button {
-	@apply flex h-[50px] w-full items-center justify-center gap-[10px] rounded-lg px-6 transition;
+	@apply flex h-[50px] w-full items-center justify-center gap-[10px] rounded-lg border border-transparent px-6 transition;
 	@apply cursor-pointer;
 }
 
@@ -24,7 +24,23 @@
 }
 
 .button-primary {
-	@apply bg-blue-ribbon-500 hover:bg-blue-ribbon-400 active:bg-blue-ribbon-600 text-white;
+	@apply bg-blue-ribbon-500 hover:bg-blue-ribbon-400 border-blue-ribbon-500 hover:border-blue-ribbon-400
+		active:bg-blue-ribbon-600 active:border-blue-ribbon-600
+		text-white;
+}
+
+.button-primary-dimmed {
+	@apply bg-[#605BFF] bg-opacity-10 text-[#605BFF] text-opacity-80 hover:bg-opacity-15  hover:text-opacity-100 active:bg-opacity-20 active:text-opacity-100;
+}
+
+.button-danger-dimmed {
+	@apply bg-[#E71D36] bg-opacity-10 text-[#E71D36] text-opacity-80 hover:bg-opacity-15  hover:text-opacity-100 active:bg-opacity-20 active:text-opacity-100;
+}
+
+.button-primary-outline {
+	@apply hover:text-blue-ribbon-400  border-blue-ribbon-400 hover:border-blue-ribbon-500 active:text-blue-ribbon-600
+		active:border-blue-ribbon-600 text-blue-ribbon-500
+		bg-white;
 }
 
 .button-secondary {
@@ -33,4 +49,27 @@
 
 .link {
 	@apply text-[#605BFF] underline;
+}
+
+.button-circle {
+	@apply flex h-[33px] w-[33px] items-center justify-center rounded-full transition;
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	@apply bg-blue-ribbon-400 rounded bg-opacity-5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	@apply bg-blue-ribbon-400 rounded bg-opacity-15;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	@apply bg-blue-ribbon-400 rounded bg-opacity-20;
 }

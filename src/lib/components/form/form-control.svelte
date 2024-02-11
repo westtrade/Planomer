@@ -17,7 +17,17 @@
 		<input
 			{id}
 			{name}
-			class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+			class="
+			leading-[18px]
+			py-[19px] px-[20px]
+			bg-[#F7F7F8]
+			text-gray-900 text-xs
+			rounded-lg
+			outline-none
+			focus:ring-blue-500 focus:border-blue-500
+			 block w-full
+			 placeholder:text-[#030229] placeholder:text-opacity-70
+			 "
 			bind:value
 			type="text"
 		/>
@@ -25,7 +35,19 @@
 		<input
 			{id}
 			{name}
-			class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+			class="
+			leading-[18px]
+			py-[19px] px-[20px]
+
+
+			bg-[#F7F7F8]
+			text-gray-900 text-xs
+			rounded-lg
+			outline-none
+			focus:ring-blue-500 focus:border-blue-500
+			 block w-full
+			 placeholder:text-[#030229] placeholder:text-opacity-70
+			 "
 			bind:value
 			type="password"
 		/>
